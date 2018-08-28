@@ -34,6 +34,7 @@ from django.utils.translation import ugettext as _
         <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
       </li>
     %endif
+
   </%block>
 </ol>
 
@@ -49,7 +50,10 @@ from django.utils.translation import ugettext as _
       <a class="shopping-cart" href="${reverse('shoppingcart.views.show_cart')}">
         <span class="icon fa fa-shopping-cart" aria-hidden="true"></span> ${_("Shopping Cart")}
       </a>
-    </li>
   </ol>
 
 % endif
+
+      <li class="doc-link">
+      <a href="http://devtanzania.camara.cam"><img src="/static/tanzania-theme/images/navigation_flags/tanzaniaflag.png" height="24" width="24"> Tanzania</a>
+      </li>
