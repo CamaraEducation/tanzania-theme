@@ -34,7 +34,13 @@ from django.utils.translation import ugettext as _
         <a href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
       </li>
     %endif
-
+ <li>
+      <a>
+        <span>
+          <img alt="Lesotho Flag" src="/static/${settings.DEFAULT_SITE_THEME}/images/tanzaniaflag.png" title="Lesotho Flag" height="55px">
+        </span> 
+      </a>
+    </li>
   </%block>
 </ol>
 
@@ -54,6 +60,4 @@ from django.utils.translation import ugettext as _
 
 % endif
 
-      <li class="doc-link">
-      <a href="http://devtanzania.camara.cam"><img src="/static/tanzania-theme/images/navigation_flags/tanzaniaflag.png" height="24" width="24"> Tanzania</a>
-      </li>
+      
