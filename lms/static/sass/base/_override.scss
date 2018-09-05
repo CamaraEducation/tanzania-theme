@@ -1,7 +1,8 @@
+
 .header-global {
     height: auto;
     background: $header-color;
-    padding: 18px 10px;
+    // padding: 18px 10px;
     position: relative;
     box-sizing: border-box;
 
@@ -191,6 +192,7 @@ body .container.activation h1.valid {
     }
 }
 
+
 .wrapper-footer {
     background: $footer-color;
     position: relative;
@@ -330,6 +332,7 @@ body .course-index .accordion .course-navigation .chapter-content-container .cha
     color: $theme-link;
 }
 
+
 .action-type-container a,
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-discussions,
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-secondary,
@@ -468,6 +471,7 @@ body .login .form-actions button[type="submit"] {
     }
 }
 
+
 .login-register .login-provider,
 body .dashboard .my-courses .course .details .enter-course.archived,
 .account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link,
@@ -560,14 +564,15 @@ body .confirm-enrollment button[type="submit"],
 body .wiki-wrapper section.wiki .btn ,
 body .wiki-wrapper section.wiki .btn:not(:disabled),
 body .wiki-wrapper section.wiki .btn:not(:disabled)
- {
+{
     text-shadow: none;
     box-shadow: none;
     border: none;
     background: $theme-btn-bg;
     color: $theme-btn-text-color;
 
-    &:focus:not(:disabled),
+
+&:focus:not(:disabled),
     &:active,
     &:focus {
         background: $theme-btn-bg;
@@ -631,7 +636,7 @@ body .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.
 }
 
 .courses-container .courses .course {
-    border-bottom: 3px solid #82bc00;
+    border-bottom: 3px solid #ffffff;
 
     .course-image .cover-image .learn-more {
         background-color: transparent;
@@ -714,6 +719,7 @@ body .wrapper-msg.wrapper-auto-cert .auto-cert-message,
     border: none;
 }
 
+
 .light-button:hover:not(:disabled),
 div.history-controls input[type="submit"]:hover:not(:disabled),
 a.light-button:hover:not(:disabled),
@@ -775,12 +781,8 @@ body .wmd-prompt-dialog .btn-brand:focus {
     background-image: url("#{$img-path}/background.jpg");
     position: relative;
     background-color: #040404;
-    background-position: 0 50%;
+    background-position: 50% 50%;
     background-size: cover;
-
-    @media screen and (max-width: 567px) {
-        background-position: 15% 50%;
-    }
 
     .outer-wrapper {
         animation: none;
@@ -813,12 +815,12 @@ body .wmd-prompt-dialog .btn-brand:focus {
                 line-height: 1.2;
                 color: #fff;
                 text-align: center;
-                font-weight: bold;
+                // font-weight: bold;
                 text-shadow: 0px 2px 0px rgba(77, 77, 77, 0.34);
                 //margin-bottom: 50px;
 
                 @media screen and (min-width: 760px) {
-                    font-size: 52px;
+                    font-size: 45px;
                 }
             }
 
@@ -884,202 +886,6 @@ body .wmd-prompt-dialog .btn-brand:focus {
             background: $theme-btn-bg;
         }
 
-        &:hover {
-            span {
-                color: $theme-btn-white-text-color-hover;
-            }
-        }
-    }
-}
-
-.home {
-    background: $theme-content-bg;
-}
-
-section.wiki .main-article {
-    .lang_ar & {
-        float: right;
-        padding: 40px;
-    }
-}
-
-section.wiki .breadcrumb {
-    .lang_ar & {
-        float: right;
-    }
-}
-
-section.wiki .global-functions {
-    .lang_ar & {
-        float: left;
-    }
-}
-
-.email-targets-secondary li label {
-    .lang_ar & {
-        float: left;
-        margin-right: 10px;
-    }
-}
-
-.course-index .accordion .course-navigation .button-chapter .group-heading {
-    .lang_ar & {
-        padding: 15px 40px 15px 10px;
-    }
-}
-
-.content-wrapper {
-    padding-bottom: 80px;
-    background: $theme-content-bg;
-}
-
-.main-article {
-    h1 {
-        text-align: left;
-
-        .lang_ar & {
-            text-align: right;
-        }
-    }
-}
-
-.window-wrap,
-body.view-in-course,
-.find-courses,
-.university-profile,
-.wrapper-account-settings,
-.view-profile .content-wrapper {
-    background: $theme-content-bg;
-}
-
-.account-settings-sections .section {
-    padding: 10px;
-}
-
-.has-breadcrumbs .breadcrumbs .all-topics .fa {
-    margin-left: 10px;
-}
-
-body.view-in-course .window-wrap {
-    min-width: auto;
-}
-
-body .bookmarks-results-list .bookmarks-results-list-item:before,
-body .xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .fa-bookmark {
-    color: $theme-btn-bg;
-}
-
-.u-field.editable-toggle.mode-display {
-    border: 2px dashed transparent;
-
-    .u-field-icon,
-    .u-field-value-readonly {
-        color: #767676;
-    }
-
-    &:hover {
-        background-color: transparent;
-        border: 2px dashed $theme-btn-bg;
-
-        .u-field-icon,
-        .message-can-edit,
-        .u-field-value-readonly,
-        .view-profile .profile-section-one-fields .u-field-icon {
-            color: $theme-btn-bg;
-        }
-    }
-}
-
-section#wiki-content.wiki .delete {
-    padding: 20px;
-}
-
-.forum-nav-thread-wrapper-1 {
-    width: 100%;
-}
-
-.btn:focus:hover,
-.content-wrapper .page-header.has-secondary .page-header-secondary .form-actions > button:focus:hover {
-    background: #fff !important;
-}
-
-body .account-settings-sections .section .account-settings-section-body .u-field .field select ~ .icon-caret-down:after {
-    border-top: 7px solid $theme-input-icon;
-}
-
-body .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field .email-targets-secondary {
-    columns: 1;
-    vertical-align: top;
-}
-
-body.rtl .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field .email-targets-secondary {
-    display: flex;
-    flex-direction: column;
-}
-
-body .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field .email-targets-primary {
-    vertical-align: top;
-}
-
-.wiki-wrapper .delete {
-    padding: 20px;
-}
-
-body.view-profile .profile-image-field .image-wrapper .u-field-remove-button {
-    color: #767676;
-}
-
-body .courses-container .courses .course .course-info {
-    background: #fff;
-}
-
-html {
-    background: #eee;
-}
-
-body .find-courses .search-facets .facet-option:hover,
-body .find-courses .search-facets .facet-option:focus {
-    background: $theme-link;
-}
-
-body .openassessment .openassessment__steps__step.is--in-progress .step__status__value,
-body .find-courses .loading-spinner {
-    background: $theme-btn-bg;
-}
-
-body .find-courses .filters .clear-filters {
-    color: $theme-link;
-}
-
-body section.wiki #hint_id_content {
-    position: relative;
-}
-
-body .CodeMirror-scroll {
-    margin-right: 0;
-}
-
-body .openassessment .is--in-progress.openassessment__steps__step {
-    border-top-color: $theme-btn-bg;
-}
-
-.rtl .course-info .details .inner-wrapper .course-staff .teacher .teacher-image {
-    margin-right: 0;
-    margin-left: 15px;
-}
-
-.rtl .dashboard .my-courses .course .details .course-actions .action {
-    float: right;
-    text-align: right;
-}
-
-.rtl .lang_ar .email-targets-secondary li label {
-    float: right;
-}
-
-.rtl .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field ul {
-    float: right;
-}
 
 .rtl .edit-post-form .post-update {
     float: right;
@@ -1285,7 +1091,206 @@ body.view-in-course {
         }
     }
 
-    span.icon {
+
+&:hover {
+            span {
+                color: $theme-btn-white-text-color-hover;
+            }
+        }
+    }
+}
+
+.home {
+    background: $theme-content-bg;
+}
+
+section.wiki .main-article {
+    .lang_ar & {
+        float: right;
+        padding: 40px;
+    }
+}
+
+section.wiki .breadcrumb {
+    .lang_ar & {
+        float: right;
+    }
+}
+
+section.wiki .global-functions {
+    .lang_ar & {
+        float: left;
+    }
+}
+
+.email-targets-secondary li label {
+    .lang_ar & {
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+.course-index .accordion .course-navigation .button-chapter .group-heading {
+    .lang_ar & {
+        padding: 15px 40px 15px 10px;
+    }
+}
+
+.content-wrapper {
+    padding-bottom: 80px;
+    background: $theme-content-bg;
+}
+
+.main-article {
+    h1 {
+        text-align: left;
+
+        .lang_ar & {
+            text-align: right;
+        }
+    }
+}
+
+.window-wrap,
+body.view-in-course,
+.find-courses,
+.university-profile,
+.wrapper-account-settings,
+.view-profile .content-wrapper {
+    background: $theme-content-bg;
+}
+
+.account-settings-sections .section {
+    padding: 10px;
+}
+
+.has-breadcrumbs .breadcrumbs .all-topics .fa {
+    margin-left: 10px;
+}
+
+body.view-in-course .window-wrap {
+    min-width: auto;
+}
+
+body .bookmarks-results-list .bookmarks-results-list-item:before,
+body .xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .fa-bookmark {
+    color: $theme-btn-bg;
+}
+
+.u-field.editable-toggle.mode-display {
+    border: 2px dashed transparent;
+
+    .u-field-icon,
+    .u-field-value-readonly {
+        color: #767676;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: 2px dashed $theme-btn-bg;
+
+        .u-field-icon,
+        .message-can-edit,
+        .u-field-value-readonly,
+        .view-profile .profile-section-one-fields .u-field-icon {
+            color: $theme-btn-bg;
+        }
+    }
+}
+
+section#wiki-content.wiki .delete {
+    padding: 20px;
+}
+
+.forum-nav-thread-wrapper-1 {
+    width: 100%;
+}
+
+.btn:focus:hover,
+.content-wrapper .page-header.has-secondary .page-header-secondary .form-actions > button:focus:hover {
+    background: #fff !important;
+}
+
+body .account-settings-sections .section .account-settings-section-body .u-field .field select ~ .icon-caret-down:after {
+    border-top: 7px solid $theme-input-icon;
+}
+
+body .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field .email-targets-secondary {
+    columns: 1;
+    vertical-align: top;
+}
+
+body.rtl .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field .email-targets-secondary {
+    display: flex;
+    flex-direction: column;
+}
+
+body .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field .email-targets-primary {
+    vertical-align: top;
+}
+
+.wiki-wrapper .delete {
+    padding: 20px;
+}
+
+body.view-profile .profile-image-field .image-wrapper .u-field-remove-button {
+    color: #767676;
+}
+
+body .courses-container .courses .course .course-info {
+    background: #fff;
+}
+
+html {
+    background: #eee;
+}
+
+body .find-courses .search-facets .facet-option:hover,
+body .find-courses .search-facets .facet-option:focus {
+    background: $theme-link;
+}
+
+body .openassessment .openassessment__steps__step.is--in-progress .step__status__value,
+body .find-courses .loading-spinner {
+    background: $theme-btn-bg;
+}
+
+body .find-courses .filters .clear-filters {
+    color: $theme-link;
+}
+
+body section.wiki #hint_id_content {
+    position: relative;
+}
+
+body .CodeMirror-scroll {
+    margin-right: 0;
+}
+
+body .openassessment .is--in-progress.openassessment__steps__step {
+    border-top-color: $theme-btn-bg;
+}
+
+.rtl .course-info .details .inner-wrapper .course-staff .teacher .teacher-image {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.rtl .dashboard .my-courses .course .details .course-actions .action {
+    float: right;
+    text-align: right;
+}
+
+.rtl .lang_ar .email-targets-secondary li label {
+    float: right;
+}
+
+.rtl .instructor-dashboard-wrapper-2 section.idash-section#send_email .list-fields .field ul {
+    float: right;
+}
+
+
+span.icon {
         display: inline;
     }
 }
@@ -1513,6 +1518,7 @@ body .login.container {
     background: transparent;
 }
 
+
 body.view-register .wrapper-footer footer,
 body.view-login .wrapper-footer footer {
     width: auto;
@@ -1692,6 +1698,132 @@ body .header-global .wrapper-header .list-inline .item a {
     text-transform: capitalize;
 }
 
+
+.footer-logo-holder .icon-list {
+    @media screen and (max-width: 768px) {
+        margin: 1em 0;
+    }
+}
+.wrapper-footer footer#footer-openedx .footer-about-openedx {
+    width: auto !important;
+    position: absolute;
+    right: 0;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1em;
+        position: relative;
+    }
+}
+.footer-logo-holder {
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.footer-logo-holder {
+    margin-bottom: 20px;
+    position: relative;
+}
+.wrapper-footer footer#footer-openedx .copyright {
+    text-align: center !important;
+}
+body .course-info .container {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+body .course-info .details {
+    margin: 0;
+    width: auto;
+}
+body .course-info .course-sidebar {
+    width: auto;
+}
+@media screen and (max-width: 768px) {
+    .shopping-cart .user-data .data-input .three-col {
+        .col-1,.col-2 {
+            width: auto;
+            margin-right: 14px;
+            order: 2;
+        }
+    }
+    .shopping-cart .user-data > .clearfix {
+        display: flex;
+        flex-direction: column;
+    }
+    body .container {
+        min-width: 0;
+    }
+    .shopping-cart .steps li:after {
+        right: -15px;
+    }
+    .shopping-cart .steps li {
+        margin: 0 5px;
+        font-size: 14px;
+        padding: 26px 15px;
+    }
+    .shopping-cart .discount .code-input input[type="text"] {
+        width: 220px;
+    }
+    .shopping-cart .col-two .col-2 {
+        width: 100%;
+    }
+    .col-2.relative > div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .shopping-cart .user-data .data-input {
+        width: 100%;
+        margin-left: 0;
+    }
+    .shopping-cart .container {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    body .course-info .course-sidebar {
+        width: 100%;
+        .course-summary {
+            width: 100%;
+        }
+    }
+    .mpesa_payment {
+        padding: 20px;
+    }
+    .three-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-3 {
+        order: 1;
+        align-self: flex-end;
+    }
+}
+.mpesa_payment {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    h3 {
+        margin-bottom: 12px;
+    }
+}
+.window-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+html, body {
+    height: 100%;
+}
+.content-wrapper {
+    flex: 1 0 auto;
+}
+.shopping-cart .discount .code-text span {
+    margin-right: 0;
+}
+
+
 div.dropdown-menu-container .dropdown-menu .dropdown-item a {
     color: $theme-link;
 }
@@ -1762,7 +1894,7 @@ div.dropdown-menu-container .dropdown-menu .dropdown-item a {
             display: flex;
         }
         li a {
-            background: #82bc00;
+            background: #ffffff;
             box-shadow: none;
             color: #ffe !important;
             border: none;
@@ -1774,7 +1906,7 @@ div.dropdown-menu-container .dropdown-menu .dropdown-item a {
             margin: 0 0 15px;
             border-radius: 2px;
             &:hover {
-                background: darken(#82bc00,20%);
+                background: darken(#ffffff,20%);
             }
         }
     }
@@ -1807,208 +1939,10 @@ body .wiki-wrapper {
 
 body .header-global .logo img,
 .wrapper-footer footer#footer-openedx .wrapper-logo img {
-    width: 256px;
+    width: 150px;
+    padding-top: 15px !important;
 }
 
-.home > header .title > .heading-group h1 {
-    background: rgba(227, 236, 211, 0.5);
-    border-radius: 6px; 
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.125), inset 0 0 0 1px rgba(255, 255, 255, 0.75);
-}
-.user-filter {
-    display: none;
-    margin-left: 20px;
-    margin-top: 20px;
-    form {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    select {
-        margin-bottom: 10px;
-    }
-    input[type="submit"] {
-        box-shadow: none;
-        background: $theme-link;
-        border: none;
-        text-shadow: none;
-        border-radius: 2px;
-        text-transform: capitalize;
-        font-size: 16px;
-        font-weight: 700;
-        color: #fff;
-        &:hover,&:focus {
-            background: darken($theme-link, 20%);
-            box-shadow: none;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        margin: 15px 0 0;
-        select {
-            height: 36px;
-        }
-        form {
-            width: 100%;
-        }
-    }
-}
-body {
-    .banner__citate {
-        text-align: right;
-        font-size: 30px;
-    }
-    // ecomerce fix
-    
-    .ecommerce-wrapper span.code_tip .add, .proctoring-wrapper span.code_tip .add,
-    .ecommerce-wrapper span.tip .add, .proctoring-wrapper span.tip .add,
-    #e-commerce #add-coupon-modal input[type="button"]#update_coupon_button, #e-commerce #add-coupon-modal input[type="button"]#add_coupon_button, #e-commerce #add-coupon-modal input[type="button"]#set_course_button, #e-commerce #add-coupon-modal input[type="button"]#lookup_regcode, #e-commerce #invalidate_registration_code_modal input[type="button"]#update_coupon_button, #e-commerce #invalidate_registration_code_modal input[type="button"]#add_coupon_button, #e-commerce #invalidate_registration_code_modal input[type="button"]#set_course_button, #e-commerce #invalidate_registration_code_modal input[type="button"]#lookup_regcode, #e-commerce #edit-coupon-modal input[type="button"]#update_coupon_button, #e-commerce #edit-coupon-modal input[type="button"]#add_coupon_button, #e-commerce #edit-coupon-modal input[type="button"]#set_course_button, #e-commerce #edit-coupon-modal input[type="button"]#lookup_regcode, #e-commerce #set-course-mode-price-modal input[type="button"]#update_coupon_button, #e-commerce #set-course-mode-price-modal input[type="button"]#add_coupon_button, #e-commerce #set-course-mode-price-modal input[type="button"]#set_course_button, #e-commerce #set-course-mode-price-modal input[type="button"]#lookup_regcode, #e-commerce #registration_code_generation_modal input[type="button"]#update_coupon_button, #e-commerce #registration_code_generation_modal input[type="button"]#add_coupon_button, #e-commerce #registration_code_generation_modal input[type="button"]#set_course_button, #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode
-    {
-        box-shadow: none !important;
-        border: none !important;
-        background: $theme-link !important;
-        
-        &:hover, &:focus {
-            box-shadow: none !important;
-            border: none !important;
-            background: darken($theme-link, 20%) !important;
-        }
-    }
-    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart,
-    .confirm-enrollment a.course-link-bg-color {
-        box-shadow: none;
-        border: none;
-        background: $theme-link;
-        background-color: none;
-        background-image: none;
-        &:hover, &:focus {
-            box-shadow: none;
-            border: none;
-            background: darken($theme-link, 20%);
-            background-color: none;
-            background-image: none;
-        }
-    }
-    .well .filter-clear a {
-        color: $theme-link;
-        &:hover, &:focus {
-            color: $theme-link-hover;
-        }
-    }
-    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:hover:not(:disabled) {
-        box-shadow: none;
-        border: none;
-        background: darken($theme-link, 20%);
-        background-color: none;
-        background-image: none;
-    }
-    .ecommerce-wrapper span.code_tip .add:hover:not(:disabled), .proctoring-wrapper span.code_tip .add:hover:not(:disabled) {
-        box-shadow: none;
-        border: none;
-        background: darken($theme-link, 20%);
-        background-color: none;
-        background-image: none;
-    }
-    .ecommerce-wrapper span.invalid_sale .add, .proctoring-wrapper span.invalid_sale .add,
-    #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"], #e-commerce #invalidate_registration_code_modal input[name="generate-registration-codes-csv"], #e-commerce #edit-coupon-modal input[name="generate-registration-codes-csv"], #e-commerce #set-course-mode-price-modal input[name="generate-registration-codes-csv"], #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"] {
-        box-shadow: none;
-        border: none;
-        background: $theme-link !important;
-        background-color: none;
-        background-image: none;
-        &:hover, &:focus {
-            background: $theme-link-hover !important;
-        }
-    }
-}
-
-    
-body .header-global .nav-courseware {
-    margin-top: 14px
-}
-div.dropdown-menu-container .dropdown-menu .dropdown-item a:hover {
-    color: darken(#82bc00, 20%);
-}
-
-.wiki-wrapper section.wiki .article-functions .see-children a:hover, .wiki-wrapper section.wiki .article-functions .see-children div.info-wrapper section.handouts ol li div.hitarea:hover+h4, div.info-wrapper section.handouts ol li .wiki-wrapper section.wiki .article-functions .see-children div.hitarea:hover+h4, .wiki-wrapper section.wiki .article-functions .see-children div.info-wrapper section.handouts ol li div.hitarea:focus+h4, div.info-wrapper section.handouts ol li .wiki-wrapper section.wiki .article-functions .see-children div.hitarea:focus+h4, .wiki-wrapper section.wiki .article-functions .see-children a:focus {
-    color: $theme-link-hover;
-}
-body .header-global .user>.primary:last-child>a.shopping-cart {
-    text-shadow: none;
-    border: 1px solid $theme-link;
-    color: $theme-link;
-    border-radius: 2px;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    &:hover,&:focus {
-        border-color: $theme-link-hover;
-        color: $theme-link-hover;
-    }
-    @media screen and (max-width: 768px) {
-        
-    }
-}
-body .wiki-wrapper section.wiki .btn:active:not(:disabled), body .wiki-wrapper section.wiki .btn:focus:not(:disabled) {
-    box-shadow: none;
-    background: $theme-link-hover;
-}
-
-.logo-header .logo {
-    display: inline-block;
-    
-}
-.header-global .logo-header {
-    float: left;
-    margin-bottom: 0;
-    @media screen and (max-width: 768px) {
-        margin-bottom: 30px;
-    }
-}
-.header-wrapper {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-.header-global .logo {
-    float: left;
-    margin: -2px 39px 0 0;
-    position: relative;
-}
-
-#global-navigation > div > nav > ol.user-filter > .nav-global-02 {
-    display: flex;
-    .filter_button {
-        padding: 7px 18px;
-    }
-}
-.wrapper-footer footer#footer-openedx .colophon .nav-colophon ol {
-    margin: 0;
-    padding: 0;
-}
-body .home>header {
-    display: flex;
-    align-items: center;
-    @media screen and (min-width: 300px) {
-        min-height: 300px;
-    }
-    @media screen and (min-width: 760px) {
-        min-height: 520px;
-    }
-}
-.home>header .title>.heading-group h1 {
-    padding: 30px;
-    //margin: 84px 0 0;
-}
-.home>header .title {
-    width: 100%;
-    max-width: 1100px;
-    margin-bottom: 0;
-}
-.enrollment-text a {
-    color: $theme-link !important; 
-    &:hover, &:focus {
-        color: $theme-link-hover;
-    }
-}
 
 .showFilter .user-filter {
     display: inline-block;
@@ -2144,126 +2078,206 @@ body.view-register .header-global nav, body.view-login .header-global nav {
     max-width: 1200px;
 }
 
-.footer-logo-holder .icon-list {
-    @media screen and (max-width: 768px) {
-        margin: 1em 0;
-    }
+
+.home > header .title > .heading-group h1 {
+    background: rgba(45, 45, 43, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 1px 10px 0 rgba(45, 45, 43, 0.1),inset 0 0 0 1px rgba(45, 45, 43, 0.1);
+    
 }
-.wrapper-footer footer#footer-openedx .footer-about-openedx {
-    width: auto !important;
-    position: absolute;
-    right: 0;
-    @media screen and (max-width: 768px) {
-        margin-bottom: 1em;
-        position: relative;
-    }
-}
-.footer-logo-holder {
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-    }
-}
-.footer-logo-holder {
-    margin-bottom: 20px;
-    position: relative;
-}
-.wrapper-footer footer#footer-openedx .copyright {
-    text-align: center !important;
-}
-body .course-info .container {
-    @media screen and (max-width: 768px) {
+.user-filter {
+    display: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    form {
         display: flex;
         flex-direction: column;
-        padding-left: 10px;
-        padding-right: 10px;
+        
     }
-}
-body .course-info .details {
-    margin: 0;
-    width: auto;
-}
-body .course-info .course-sidebar {
-    width: auto;
-}
-@media screen and (max-width: 768px) {
-    .shopping-cart .user-data .data-input .three-col {
-        .col-1,.col-2 {
-            width: auto;
-            margin-right: 14px;
-            order: 2;
+    select {
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        box-shadow: none;
+        background: $theme-link;
+        border: none;
+        text-shadow: none;
+        border-radius: 2px;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        &:hover,&:focus {
+            background: darken($theme-link, 20%);
+            box-shadow: none;
         }
     }
-    .shopping-cart .user-data > .clearfix {
-        display: flex;
-        flex-direction: column;
-    }
-    body .container {
-        min-width: 0;
-    }
-    .shopping-cart .steps li:after {
-        right: -15px;
-    }
-    .shopping-cart .steps li {
-        margin: 0 5px;
-        font-size: 14px;
-        padding: 26px 15px;
-    }
-    .shopping-cart .discount .code-input input[type="text"] {
-        width: 220px;
-    }
-    .shopping-cart .col-two .col-2 {
+    @media screen and (max-width: 768px) {
         width: 100%;
-    }
-    .col-2.relative > div {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .shopping-cart .user-data .data-input {
-        width: 100%;
-        margin-left: 0;
-    }
-    .shopping-cart .container {
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
-    body .course-info .course-sidebar {
-        width: 100%;
-        .course-summary {
+        margin: 15px 0 0;
+        select {
+            height: 36px;
+        }
+        form {
             width: 100%;
         }
     }
-    .mpesa_payment {
-        padding: 20px;
+}
+body {
+    .banner__citate {
+        text-align: right;
+        font-size: 30px;
     }
-    .three-col {
-        display: flex;
-        flex-direction: column;
+    // ecomerce fix
+    
+    .ecommerce-wrapper span.code_tip .add, .proctoring-wrapper span.code_tip .add,
+    .ecommerce-wrapper span.tip .add, .proctoring-wrapper span.tip .add,
+    #e-commerce #add-coupon-modal input[type="button"]#update_coupon_button, #e-commerce #add-coupon-modal input[type="button"]#add_coupon_button, #e-commerce #add-coupon-modal input[type="button"]#set_course_button, #e-commerce #add-coupon-modal input[type="button"]#lookup_regcode, #e-commerce #invalidate_registration_code_modal input[type="button"]#update_coupon_button, #e-commerce #invalidate_registration_code_modal input[type="button"]#add_coupon_button, #e-commerce #invalidate_registration_code_modal input[type="button"]#set_course_button, #e-commerce #invalidate_registration_code_modal input[type="button"]#lookup_regcode, #e-commerce #edit-coupon-modal input[type="button"]#update_coupon_button, #e-commerce #edit-coupon-modal input[type="button"]#add_coupon_button, #e-commerce #edit-coupon-modal input[type="button"]#set_course_button, #e-commerce #edit-coupon-modal input[type="button"]#lookup_regcode, #e-commerce #set-course-mode-price-modal input[type="button"]#update_coupon_button, #e-commerce #set-course-mode-price-modal input[type="button"]#add_coupon_button, #e-commerce #set-course-mode-price-modal input[type="button"]#set_course_button, #e-commerce #set-course-mode-price-modal input[type="button"]#lookup_regcode, #e-commerce #registration_code_generation_modal input[type="button"]#update_coupon_button, #e-commerce #registration_code_generation_modal input[type="button"]#add_coupon_button, #e-commerce #registration_code_generation_modal input[type="button"]#set_course_button, #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode
+    {
+        box-shadow: none !important;
+        border: none !important;
+        background: $theme-link !important;
+        
+        &:hover, &:focus {
+            box-shadow: none !important;
+            border: none !important;
+            background: darken($theme-link, 20%) !important;
+        }
     }
-    .col-3 {
-        order: 1;
-        align-self: flex-end;
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart,
+    .confirm-enrollment a.course-link-bg-color {
+        box-shadow: none;
+        border: none;
+        background: $theme-link;
+        background-color: none;
+        background-image: none;
+        &:hover, &:focus {
+            box-shadow: none;
+            border: none;
+            background: darken($theme-link, 20%);
+            background-color: none;
+            background-image: none;
+        }
+    }
+    .well .filter-clear a {
+        color: $theme-link;
+        &:hover, &:focus {
+            color: $theme-link-hover;
+        }
+    }
+
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta>a.find-courses:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled), .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.add-to-cart:hover:not(:disabled) {
+        box-shadow: none;
+        border: none;
+        background: darken($theme-link, 20%);
+        background-color: none;
+        background-image: none;
+    }
+    .ecommerce-wrapper span.code_tip .add:hover:not(:disabled), .proctoring-wrapper span.code_tip .add:hover:not(:disabled) {
+        box-shadow: none;
+        border: none;
+        background: darken($theme-link, 20%);
+        background-color: none;
+        background-image: none;
+    }
+    .ecommerce-wrapper span.invalid_sale .add, .proctoring-wrapper span.invalid_sale .add,
+    #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"], #e-commerce #invalidate_registration_code_modal input[name="generate-registration-codes-csv"], #e-commerce #edit-coupon-modal input[name="generate-registration-codes-csv"], #e-commerce #set-course-mode-price-modal input[name="generate-registration-codes-csv"], #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"] {
+        box-shadow: none;
+        border: none;
+        background: $theme-link !important;
+        background-color: none;
+        background-image: none;
+        &:hover, &:focus {
+            background: $theme-link-hover !important;
+        }
     }
 }
-.mpesa_payment {
-    max-width: 700px;
-    width: 100%;
+
+
+body .header-global .nav-courseware {
+    margin-top: 14px
+}
+div.dropdown-menu-container .dropdown-menu .dropdown-item a:hover {
+    color: darken(#ffffff, 20%);
+}
+
+.wiki-wrapper section.wiki .article-functions .see-children a:hover, .wiki-wrapper section.wiki .article-functions .see-children div.info-wrapper section.handouts ol li div.hitarea:hover+h4, div.info-wrapper section.handouts ol li .wiki-wrapper section.wiki .article-functions .see-children div.hitarea:hover+h4, .wiki-wrapper section.wiki .article-functions .see-children div.info-wrapper section.handouts ol li div.hitarea:focus+h4, div.info-wrapper section.handouts ol li .wiki-wrapper section.wiki .article-functions .see-children div.hitarea:focus+h4, .wiki-wrapper section.wiki .article-functions .see-children a:focus {
+    color: $theme-link-hover;
+}
+body .header-global .user>.primary:last-child>a.shopping-cart {
+    text-shadow: none;
+    border: 1px solid $theme-link;
+    color: $theme-link;
+    border-radius: 2px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    &:hover,&:focus {
+        border-color: $theme-link-hover;
+        color: $theme-link-hover;
+    }
+    @media screen and (max-width: 768px) {
+
+    }
+}
+body .wiki-wrapper section.wiki .btn:active:not(:disabled), body .wiki-wrapper section.wiki .btn:focus:not(:disabled) {
+    box-shadow: none;
+    background: $theme-link-hover;
+}
+
+.logo-header .logo {
+    display: inline-block;
+    
+}
+.header-global .logo-header {
+    float: left;
+    margin-bottom: 0;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+.header-wrapper {
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 20px 0;
-    h3 {
-        margin-bottom: 12px;
+}
+.header-global .logo {
+    float: left;
+    margin: -2px 39px 0 0;
+    position: relative;
+}
+
+#global-navigation > div > nav > ol.user-filter > .nav-global-02 {
+    display: flex;
+    .filter_button {
+        padding: 7px 18px;
     }
 }
-.window-wrap {
+.wrapper-footer footer#footer-openedx .colophon .nav-colophon ol {
+    margin: 0;
+    padding: 0;
+}
+body .home>header {
     display: flex;
-    flex-flow: column nowrap;
-    min-height: 100vh;
+    align-items: center;
+    @media screen and (min-width: 300px) {
+        min-height: 300px;
+    }
+    @media screen and (min-width: 760px) {
+        min-height: 400px;
+    }
 }
-html, body {
-    height: 100%;
+.home>header .title>.heading-group h1 {
+    padding: 30px;
+    //margin: 84px 0 0;
 }
-.content-wrapper {
-    flex: 1 0 auto;
+.home>header .title {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 0;
 }
-.shopping-cart .discount .code-text span {
-    margin-right: 0;
+.enrollment-text a {
+    color: $theme-link !important; 
+    &:hover, &:focus {
+        color: $theme-link-hover;
+    }
 }
